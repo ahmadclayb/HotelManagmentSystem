@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>LoungeHotel | Booking</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="../css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="../js/jquery-1.6.js" ></script>
+<script type="text/javascript" src="../js/cufon-yui.js"></script>
+<script type="text/javascript" src="../js/cufon-replace.js"></script>
+<script type="text/javascript" src="../js/Adamina_400.font.js"></script>
+<script type="text/javascript" src="../js/jquery.jqtransform.js" ></script>
+<script type="text/javascript" src="../js/script.js" ></script>
+<script type="text/javascript" src="../js/atooltip.jquery.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5.js"></script>
+<link rel="stylesheet" href="css/ie.css" type="text/css" media="all">
+<![endif]-->
+</head>
+<body id="page3">
+<div class="bg1">
+  <div class="bg2">
+    <div class="main">
+      <!-- header -->
+      <header>
+        <h1><a href="index.html" id="logo">SkyHotel</a></h1>
+        <h1><a href="user.html" id="department"></a></h1>
+      </header>
+      <div class="box">
+        <nav>
+          <ul id="menu">
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li class="active"><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- header end -->
+        <!-- content -->
+        <article id="content">
+          <div class="box1">
+            <div class="wrapperbook">
+              <form action="#" id="form1" id="reset">
+                <h2>Book a Room</h2>
+              </br>
+                <fieldset>
+                  <div class="row">
+                    <input type="text" class="input">
+                    First Name:
+                  </div>
+                  <div class="row">
+                    <input type="text" class="input">
+                    Last Name:
+                  </div>
+                  <div class="row">
+                    <input type="text" class="input">
+                    E-Mail Address:
+                  </div>
+                  <div class="row">
+                    <input type="text" class="input">
+                    Phone Number:
+                  </div>
+                  <div class="row">
+                    Check-in Date:
+                    &nbsp;&nbsp;&nbsp;&nbsp;<input type="date" class="input">
+                  </div>
+                  <div class="row">
+                    Check-out Date:
+                    &nbsp;&nbsp;&nbsp;<input type="date" class="input">
+                  </div>
+                  <div class="row">
+                    Adults:
+                    <select class="input" id="myselect">
+                      <option value="number">1</option>
+                      <option value="number">2</option>
+                      <option value="number">3</option>
+                      <option value="number">4</option>
+                      <option value="number">5</option>
+                    </select>
+                  </div>
+                  <div class="row">
+                    Children:
+                    <select class="input" id="myselect">
+                      <option value="number">0</option>
+                      <option value="number">1</option>
+                      <option value="number">2</option>
+                      <option value="number">3</option>
+                      <option value="number">4</option>
+                      <option value="number">5</option>
+                    </select>
+                  </div>
+                </br>
+                  <div class="wrapper">
+                    <a href="booking.html" class="button1" onClick="document.getElementById('form1').submit()">Book</a>
+                    <a href="#" class="button1" onClick="document.getElementById('form1').reset()">Clear</a>
+                  </div>
+                </fieldset>
+              </form>
+                <h2 style="color: #d80505"><img src="../images/title_marker1.jpg" alt="">Book Now</h2>
+                  <form action="booking.php" method="post" role="form" style="color: #ffffff" class="input">
+                      &nbsp;<input type="radio" name="room" value="room1" checked>&nbsp;<b>Standard Room</b><br>
+                      &nbsp;<input type="radio" name="room" value="room2">&nbsp;<b>Junior Suite</b><br>
+                      &nbsp;<input type="radio" name="room" value="room3">&nbsp;<b>Superior Room</b><br>
+                      &nbsp;<input type="radio" name="room" value="room4">&nbsp;<b>King Suite</b><br><br>
+
+                      <div class="jqTransformSelect"
+                      <label for="checkindate">Check-in Date:</label>
+                      <input name="checkindate" id="checkindate" type="date" class="form-control" required="">
+                      <br /><br />
+                      <label for="checkoutdate">Check-out Date:</label>
+                      <input name="checkoutdate" id="checkoutdate" type="date" class="inputjqtranformdone" required="">
+                      <br /><br />
+                      <label for="adults">Adults:</label>
+                      <input name="adults" id="adults" type="number" class="form-control" required="">
+                      <br><br>
+                      <label for="children">Children:</label>
+                      <input name="children" id="children" type="number" class="form-control" required="">
+                      <br><br><br>
+                      <button type="submit" class="button1">Book</button>
+                 </form>
+              </div>
+            </div>
+          </div>
+          <div class="pad">
+            <div class="wrapper line3">
+              <div class="col2">
+                <h2>About Booking</h2>
+                <p class="pad_bot1"><strong class="color2">Fill out the information above and hit book to ensure your reseration is made. Payment details will be given at the time of chcek in</strong> </p>
+                <p> There will be a fee if cancelled after 24 hours before the reservation/check in date. Please see a reciponist or contact us for further details. We also do have a deposit policy so there will be
+                a charge of about $50 to the provided visa to ensure nothing is stolen or damaged in the hotel</p>
+                <div class="wrapper">
+                  <figure class="left marg_right1"><img src="../images/page3_img3.jpg" alt=""></figure>
+                  <p class="pad_bot1"><strong class="color2">We Look forward to seeing you and hoep you enjoy your stay</strong></p>
+                  <p class="pad_bot2"> We do hope you find everything provided very well accomodating and you leave us a review on <a href="https://www.facebook.com" target="blank_">Facebook</a> or any of our social media.
+                </div>
+                <div class="pad_bot2">
+                  <div class="wrapper line2">
+                    </div>
+            </div>
+          </div>
+        </article>
+        <!--content end-->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main">
+  <!-- footer -->
+  <footer>
+    <div class="col2">Copyright &copy; 2017 SkyHotel. All Rights Reserved
+      <nav>
+        <ul id="footer_menu">
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li class="active"><a href="booking.html">Booking</a></li>
+          <li class="last"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col1 pad_left1">
+      <ul id="icons">
+        <li><a href="http://www.linkedin.com" class="normaltip" target="_blank"><img src="../images/icon1.jpg" alt=""></a></li>
+        <li><a href="http://www.facebook.com" class="normaltip" target="_blank"><img src="../images/icon2.jpg" alt=""></a></li>
+        <li><a href="http://www.twitter.com" class="normaltip" target="_blank"><img src="../images/icon4.jpg" alt=""></a></li>
+      </ul>
+    </div>
+    <!-- {%FOOTER_LINK} -->
+  </footer>  <!-- footer end -->
+</div>
+<script type="text/javascript">Cufon.now();</script>
+</body>
+</html>
